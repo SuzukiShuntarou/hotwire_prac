@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "rewards/index"
+  get "rewards/show"
+  get "rewards/new"
+  get "rewards/edit"
   devise_scope :user do
     root to: 'users/sessions#new'
     get '/users/sign_out' => 'devise/sessions#destroy'
