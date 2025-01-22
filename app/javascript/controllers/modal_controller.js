@@ -1,7 +1,9 @@
-import { Controller } from "@hotwired/stimulus"
+import { Modal } from "tailwindcss-stimulus-components";
 
-// Connects to data-controller="reward-modal"
-export default class extends Controller {
+export default class ExtendedModal extends Modal {
+  static targets = ["form"];
+
   connect() {
+    super.connect();
   }
 }
